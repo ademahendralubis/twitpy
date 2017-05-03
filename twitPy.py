@@ -27,10 +27,10 @@ class TwitterPy:
         response, data = self.client.request(uri=post_timeline_endpoint,method="POST")
         if response['status'] == "200":
             print("\npesan berhasil dipost\n")
-            return False
+            return True
         else:
             print("\npesan tidak berhasil berhasil dipost\n")
-            return True
+            return False
         
         
     
